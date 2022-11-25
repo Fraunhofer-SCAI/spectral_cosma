@@ -1,0 +1,21 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Data
+DATA/*/tmp
+DATA/
+# reconstruction plots
+plots/
+# tensorboard
+logs/
+# trained models
+experiments/
+
+# IPython
+profile_default/
+ipython_config.py
+.ipynb_checkpoints/
+
+
