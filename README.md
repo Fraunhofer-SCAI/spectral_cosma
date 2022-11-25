@@ -9,10 +9,10 @@
 **Sara Hahner**  
 *Fraunhofer Center for Machine Learning and SCAI, Sankt Augustin, Germany*   
 
-**Felix Kerkhoff**
+**Felix Kerkhoff**  
 *Johannes Kepler Universität, Linz, Austria*
 
-**Jochen Garcke**
+**Jochen Garcke**  
 *Fraunhofer Center for Machine Learning and SCAI, Sankt Augustin, Germany*   
 *Institut für Numerische Simulation, Universität Bonn, Germany*
 
@@ -46,7 +46,7 @@ In the directory [experiments](experiments) you can find our trained models. Com
 
 These files are written by the training and testing scripts. For the review process we provide the GALLOP dataset to reproduce the training and testing of the autoencoder for semi-regular meshes of different sizes.
 
-<img src="network_architecture.png" width="350" />
+<img src="network_architecture.png" width="500" />
 
 ## 5. Datasets and Reproduction of the Results
 
