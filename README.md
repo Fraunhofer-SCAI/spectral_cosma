@@ -2,9 +2,9 @@
 
 ### Implementation of spectral CoSMA: Convolutional Semi-Regular Mesh Autoencoder
 
-<!---[paper]()
+[paper](https://openreview.net/forum?id=7B_qc3tDyD)
 
-[arXiv publication]()-->
+<!---[arXiv publication]()-->
 
 **Sara Hahner**  
 *Fraunhofer Center for Machine Learning and SCAI, Sankt Augustin, Germany*   
@@ -91,11 +91,12 @@ Semi-regular meshes with refinement level 4 are following.
 ## 6. Citation
 
 ```markdown
-@InProceedings{Hahner2022b,
-    author    = {Hahner, Sara and Kerkhoff, Felix and Garcke, Jochen},
-    title     = {Transfer Learning using Spectral Convolutional Autoencoders on Semi-Regular Surface Meshes},
-    booktitle = {Proceedings of the First Learning on Graphs Conference (LoG 2022)},
-    month     = {December},
-    year      = {2022},
+@inproceedings{
+    hahner2022transfer,
+    title={Transfer Learning using Spectral Convolutional Autoencoders on Semi-Regular Surface Meshes},
+    author={Sara Hahner and Felix Kerkhoff and Jochen Garcke},
+    booktitle={Learning on Graphs Conference},
+    year={2022},
+    url={https://openreview.net/forum?id=7B_qc3tDyD}
 }
 ```
