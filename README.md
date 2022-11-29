@@ -2,9 +2,9 @@
 
 ### Implementation of spectral CoSMA: Convolutional Semi-Regular Mesh Autoencoder
 
-[paper]()
+<!---[paper]()
 
-[arXiv publication]()
+[arXiv publication]()-->
 
 **Sara Hahner**  
 *Fraunhofer Center for Machine Learning and SCAI, Sankt Augustin, Germany*   
@@ -44,7 +44,7 @@ Furthermore, baseline autoencoders detect deformation patterns of unseen mesh se
 
 In the directory [experiments](experiments) you can find our trained models. Compare your results to the training errors in the experiment-runner-txt-files [GALLOP-Log-File](experiments/gallop_r4_2203/gallop/experiment_runner_gallop.txt). 
 
-These files are written by the training and testing scripts. For the review process we provide the GALLOP dataset to reproduce the training and testing of the autoencoder for semi-regular meshes of different sizes.
+These files are written by the training and testing scripts. We provide the GALLOP dataset to reproduce the training and testing of the autoencoder for semi-regular meshes of different sizes.
 
 <img src="network_architecture.png" width="500" />
 
@@ -83,7 +83,10 @@ python training.py --dataset gallop_r4_2203 --test_split elephant --test_ratio 0
 
 python testing.py --spec_dataset gallop_r4_2203 --exp_name r4_coarsenfinal --dataset gallop --test_split elephant --test_ratio 0.3 --model_name gallop --refine 4 --hid_rep 10 --seed 1 --patch_zeromean True --surface_aware_loss True --plots True
 ```
+#### TRUCK and FAUST
 
+Data with refinement level 3 available at: [Spatial CoSMA repository](https://github.com/Fraunhofer-SCAI/conv_sr_mesh_autoencoder)
+Semi-regular meshes with refinement level 4 are following. 
 
 ## 6. Citation
 
