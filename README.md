@@ -85,7 +85,7 @@ python 02_testing.py --spec_dataset gallop_r4_2203 --exp_name r4_coarsenfinal --
 ```
 
 
-#### b) [FAUST](data/FAUST)
+#### b) FAUST
 
 **Bogo et al, 2014: FAUST: Dataset and evaluation for 3Dmesh registration** [Webpage](http://faust.is.tue.mpg.de/)
 
