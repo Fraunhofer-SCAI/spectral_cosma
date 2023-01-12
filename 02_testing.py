@@ -40,7 +40,7 @@ def get_args():
     parser.add_argument('--rotation_augment', type=int, default=1)
 
     # data split
-    parser.add_argument('--test_split', type=str, default='elephant') # train-test-split: 100-0
+    parser.add_argument('--test_split', nargs='+', type=str, default=['elephant'])
     parser.add_argument('--test_ratio', type=float, default=0.25) # train-test-split: 75-25 for train samples
 
     # training variables
@@ -99,7 +99,7 @@ now = datetime.datetime.now()
     
 logfile = open(model_logs+'/experiment_runner_{}.txt'.format(args.model_name), "a")
 logfile.write("\n-----------------\nLOG \n-----------------\n\n")
-logfile.write("Seed: {}\n\n".format(args.seed))
+logfile.write("Seeds: {}\n\n".format(args.seed))
 
 ## versions
 versions = [f.name for f in os.scandir(args.data_fp_spec) if f.is_dir() and 'checkpoints' not in f.name and 'tmp' not in f.name]
@@ -108,13 +108,9 @@ print('Versions:', versions)
 ## parts/samples (for every version the same!)
 samples = [f.name for f in os.scandir(osp.join(args.data_fp_spec, versions[0])) if f.is_dir() and 'checkpoints' not in f.name and 'tmp' not in f.name]
 print('Samples:', samples)
-test_samples = [sa for sa in samples if sa == args.test_split]
-
-
-if 'faust8' in test_samples:
-    test_samples += ['faust9']
+test_samples = [sa for sa in samples if sa in args.test_split]
 print('\nTest Sample:', test_samples)
-train_samples = [sa for sa in samples if sa  not in test_samples] #!= args.test_split]
+train_samples = [sa for sa in samples if sa  not in test_samples] 
 print('Train Samples:', train_samples, '\n')
 
 ### get test and train timesteps
@@ -348,12 +344,14 @@ if args.plots:
         if 'TRUCK' in args.dataset:
             time_ids=[24]
             pnames = ['part_000']
-            version_ids = [13,18]
+            hexasemiregdat.versions.sort()
+            version_ids = [0,5]
             vmax = 3.0
-        else:
+        else:            
             time_ids=[15]
             pnames = ['part_166', 'part_164']
-            version_ids = [0,1]
+            hexasemiregdat.versions.sort()
+            version_ids = [1,6]
             vmax = 3.0
             view = (-10,270)#(17,270)
 

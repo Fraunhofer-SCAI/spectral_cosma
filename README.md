@@ -72,21 +72,53 @@ File Structure in [DATA](DATA):
     - *semiregular*: for every sample we provide the semi-regular mesh, which has been refined and fit to the shape of the irregular template mesh
 
 
-#### GALLOP
+#### a) GALLOP
 
 **Sumner et al: 2004: Deformation transfer for triangle meshes** [Webpage](https://people.csail.mit.edu/sumner/research/deftransfer/)
 
 A dataset containing triangular meshes representing motion sequences from a galloping horse, elephant, and camel. Each sequence has 48 timesteps. The three animals move in a similar way but the meshes that represent the surfaces of the three animals are highly different in connectivity and in the number of vertices. 
 
 ```
-python training.py --dataset gallop_r4_2203 --test_split elephant --test_ratio 0.3 --model_name gallop --refine 4 --hid_rep 10 --seed 1 --patch_zeromean True --surface_aware_loss True --Niter 150
+python 01_training.py --dataset gallop_r4_2203 --test_split elephant --test_ratio 0.3 --model_name gallop --refine 4 --hid_rep 10 --seed 1 --patch_zeromean True --surface_aware_loss True --Niter 150
 
-python testing.py --spec_dataset gallop_r4_2203 --exp_name r4_coarsenfinal --dataset gallop --test_split elephant --test_ratio 0.3 --model_name gallop --refine 4 --hid_rep 10 --seed 1 --patch_zeromean True --surface_aware_loss True --plots True
+python 02_testing.py --spec_dataset gallop_r4_2203 --exp_name r4_coarsenfinal --dataset gallop --test_split elephant --test_ratio 0.3 --model_name gallop --refine 4 --hid_rep 10 --seed 1 --patch_zeromean True --surface_aware_loss True --plots True
 ```
-#### TRUCK and FAUST
 
-Data with refinement level 3 available at: [Spatial CoSMA repository](https://github.com/Fraunhofer-SCAI/conv_sr_mesh_autoencoder)
-Semi-regular meshes with refinement level 4 are following. 
+
+#### b) [FAUST](data/FAUST)
+
+**Bogo et al, 2014: FAUST: Dataset and evaluation for 3Dmesh registration** [Webpage](http://faust.is.tue.mpg.de/)
+
+We consider two unknown poses of all bodies in the testing set. Therefore, 20% of the data is included in the testing set.
+
+```
+bash 00_get_data.sh FAUST
+
+python 01_training.py --dataset FAUST_r4_2203 --test_split nichts --test_ratio 0.25 --model_name FAUST --refine 4 --hid_rep 10 --seed 1 --patch_zeromean True --surface_aware_loss True --Niter 150
+
+python 02_testing.py --spec_dataset FAUST_r4_2203 --exp_name r4_coarsento100 --dataset FAUST --test_split nichts --test_ratio 0.25 --model_name FAUST --refine 4 --hid_rep 10 --seed 1 --patch_zeromean True --surface_aware_loss True --plots True
+```
+
+#### c) TRUCK 
+
+
+**National Crash Analysis Center (NCAC). Finite Element Model Archive**
+
+- TRUCK : 32  completed  frontal crash simulations of a Chevrolet C2500 pick-up truck, 6 components, 30 equally distributed time steps
+- YARIS: 10 completed frontal crash simulations of a detailed model of the Toyota Yaris, 10 components, 26 equally distributed time steps
+
+```
+bash 00_get_data.sh car_TRUCK
+bash 00_get_data.sh car_YARIS
+
+python 01_training.py --dataset car_TRUCK_r4_2204 --test_ratio -0.3 --model_name TRUCK  --refine 4 --rotation_augment 0 --hid_rep 10 --surface_aware_loss True --seed 1   --Niter 300 --lr 0.001
+
+python 02_testing.py --spec_dataset car_TRUCK_r4_2204 --dataset car_TRUCK --exp_name r4_meshlab --test_ratio -0.3 --model_name TRUCK  --refine 4 --rotation_augment 0 --hid_rep 10 --surface_aware_loss True --seed 1  --plots True
+
+python 02_testing.py --spec_dataset car_YARIS_r4_2204  --exp_name r4_meshlab --dataset car_YARIS --test_ratio 1 --model_name TRUCK --refine 4 --hid_rep 10 --seed 1  --patch_zeromean True --rotation_augment 0 --plots True
+```
+
+Data with refinement level 3 and the code for the spatial CoSMA available at: [Spatial CoSMA repository](https://github.com/Fraunhofer-SCAI/conv_sr_mesh_autoencoder)
 
 ## 6. Citation
 

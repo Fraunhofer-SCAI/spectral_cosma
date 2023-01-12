@@ -165,7 +165,7 @@ class ModelTrainer:
                 self.runtimes.append(time.time() - self.start)
                 runtime = self.runtimes[-1] - self.runtimes[-2] if epoch // test_interval > 1 else self.runtimes[-1] 
                 runtimewo = self.runtimeswo[-1] - self.runtimeswo[-2] if epoch // test_interval > 1 else self.runtimeswo[-1] 
-                logtext = f'Epoch: {epoch:03d}, Loss: {loss:.6f}, Reg: {reg:.6f}, Gradient Norm: {gnorm:.3f}, R^2 Score: {score:.5f}, Validation-Loss: {val_loss:.6f}, Validation-Reg: {val_reg:.6f}, Validation R^2 Score: {val_score:.5f}, Runtime: {runtime:.2f}'
+                logtext = f'Epoch: {epoch:03d}, Loss: {loss:.6f}, Gradient Norm: {gnorm:.3f}, R^2 Score: {score:.5f}, Validation-Loss: {val_loss:.6f}, Validation R^2 Score: {val_score:.5f}, Runtime: {runtime:.2f}'
                 
                 print(logtext)
                 if logfile is not None: 
@@ -179,11 +179,9 @@ class ModelTrainer:
             if writer is not None:
                 # adding running loss to tensorboard
                 writer.add_scalar("Loss/train", loss, epoch)
-                writer.add_scalar("Regularization/train", reg, epoch)
                 writer.add_scalar("GradientNorm", gnorm, epoch)
                 if epoch % test_interval == 0:
                     writer.add_scalar("Loss/val", val_loss, epoch)
-                    writer.add_scalar("Regularization/val", val_reg, epoch)
         
         print('Runtime: ', self.runtimes[-1])
         if logfile is not None: 

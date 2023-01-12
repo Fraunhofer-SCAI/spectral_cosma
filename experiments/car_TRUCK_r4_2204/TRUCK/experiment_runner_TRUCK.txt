@@ -1,0 +1,529 @@
+--model_name TRUCK
+--dataset car_TRUCK_r4_2204
+--device_idx 0
+--refine 4
+--kernel_size 2
+--patch_zeromean True
+--padded 1
+--rotation_augment 0
+--test_split ['elephant']
+--test_ratio -0.3
+--batch_size 100
+--hid_rep 10
+--lr 0.001
+--clip_grad_norm False
+--grad_max_norm 0.1
+--Niter 300
+--conv_name ChebConv
+--ChebNet_K 6
+--channels [16, 32]
+--lastlinear False
+--surface_aware_loss True
+--seed [1]
+(path) work_dir: ****
+(path) data_fp_spec: ****
+(path) model_fp: ****
+
+Date:  
+66528 training samples
+28512 testing samples
+23053 trainable weights
+
+
+ Training Model TRUCK for seed 1:
+
+Epoch: 001, Loss: 0.000128, Gradient Norm: 0.000, R^2 Score: 0.90723, Validation-Loss: 0.000043, Validation R^2 Score: 0.94696, Runtime: 28.79
+Epoch: 002, Loss: 0.000041, Gradient Norm: 0.003, R^2 Score: 0.94861, Validation-Loss: 0.000042, Validation R^2 Score: 0.94509, Runtime: 28.03
+Epoch: 003, Loss: 0.000039, Gradient Norm: 0.003, R^2 Score: 0.94954, Validation-Loss: 0.000039, Validation R^2 Score: 0.94996, Runtime: 28.04
+Epoch: 004, Loss: 0.000038, Gradient Norm: 0.002, R^2 Score: 0.94975, Validation-Loss: 0.000037, Validation R^2 Score: 0.95081, Runtime: 27.99
+Epoch: 005, Loss: 0.000037, Gradient Norm: 0.002, R^2 Score: 0.94956, Validation-Loss: 0.000038, Validation R^2 Score: 0.95133, Runtime: 27.98
+Epoch: 006, Loss: 0.000037, Gradient Norm: 0.002, R^2 Score: 0.94934, Validation-Loss: 0.000036, Validation R^2 Score: 0.94979, Runtime: 27.94
+Epoch: 007, Loss: 0.000036, Gradient Norm: 0.002, R^2 Score: 0.94935, Validation-Loss: 0.000036, Validation R^2 Score: 0.94902, Runtime: 27.96
+Epoch: 008, Loss: 0.000034, Gradient Norm: 0.001, R^2 Score: 0.94994, Validation-Loss: 0.000033, Validation R^2 Score: 0.95186, Runtime: 27.96
+Epoch: 009, Loss: 0.000031, Gradient Norm: 0.001, R^2 Score: 0.95136, Validation-Loss: 0.000032, Validation R^2 Score: 0.94997, Runtime: 27.91
+Epoch: 010, Loss: 0.000028, Gradient Norm: 0.001, R^2 Score: 0.95318, Validation-Loss: 0.000027, Validation R^2 Score: 0.95501, Runtime: 27.91
+Epoch: 011, Loss: 0.000026, Gradient Norm: 0.001, R^2 Score: 0.95462, Validation-Loss: 0.000024, Validation R^2 Score: 0.95641, Runtime: 27.96
+Epoch: 012, Loss: 0.000024, Gradient Norm: 0.001, R^2 Score: 0.95532, Validation-Loss: 0.000024, Validation R^2 Score: 0.95402, Runtime: 27.95
+Epoch: 013, Loss: 0.000022, Gradient Norm: 0.001, R^2 Score: 0.95636, Validation-Loss: 0.000021, Validation R^2 Score: 0.95718, Runtime: 27.92
+Epoch: 014, Loss: 0.000020, Gradient Norm: 0.001, R^2 Score: 0.95712, Validation-Loss: 0.000019, Validation R^2 Score: 0.95825, Runtime: 27.87
+Epoch: 015, Loss: 0.000019, Gradient Norm: 0.001, R^2 Score: 0.95772, Validation-Loss: 0.000018, Validation R^2 Score: 0.95846, Runtime: 27.86
+Epoch: 016, Loss: 0.000018, Gradient Norm: 0.001, R^2 Score: 0.95793, Validation-Loss: 0.000017, Validation R^2 Score: 0.95872, Runtime: 27.90
+Epoch: 017, Loss: 0.000017, Gradient Norm: 0.001, R^2 Score: 0.95802, Validation-Loss: 0.000019, Validation R^2 Score: 0.95414, Runtime: 27.90
+Epoch: 018, Loss: 0.000016, Gradient Norm: 0.001, R^2 Score: 0.95805, Validation-Loss: 0.000016, Validation R^2 Score: 0.95821, Runtime: 27.88
+Epoch: 019, Loss: 0.000016, Gradient Norm: 0.001, R^2 Score: 0.95838, Validation-Loss: 0.000016, Validation R^2 Score: 0.95730, Runtime: 27.84
+Epoch: 020, Loss: 0.000015, Gradient Norm: 0.001, R^2 Score: 0.95867, Validation-Loss: 0.000015, Validation R^2 Score: 0.95746, Runtime: 27.87
+Epoch: 021, Loss: 0.000014, Gradient Norm: 0.001, R^2 Score: 0.95913, Validation-Loss: 0.000014, Validation R^2 Score: 0.95970, Runtime: 27.83
+Epoch: 022, Loss: 0.000014, Gradient Norm: 0.001, R^2 Score: 0.95936, Validation-Loss: 0.000014, Validation R^2 Score: 0.95882, Runtime: 27.83
+Epoch: 023, Loss: 0.000014, Gradient Norm: 0.001, R^2 Score: 0.95967, Validation-Loss: 0.000016, Validation R^2 Score: 0.96061, Runtime: 27.84
+Epoch: 024, Loss: 0.000013, Gradient Norm: 0.001, R^2 Score: 0.95991, Validation-Loss: 0.000013, Validation R^2 Score: 0.96031, Runtime: 27.85
+Epoch: 025, Loss: 0.000013, Gradient Norm: 0.001, R^2 Score: 0.96019, Validation-Loss: 0.000014, Validation R^2 Score: 0.95906, Runtime: 27.84
+Epoch: 026, Loss: 0.000013, Gradient Norm: 0.001, R^2 Score: 0.96033, Validation-Loss: 0.000012, Validation R^2 Score: 0.96035, Runtime: 27.84
+Epoch: 027, Loss: 0.000012, Gradient Norm: 0.001, R^2 Score: 0.96063, Validation-Loss: 0.000012, Validation R^2 Score: 0.96158, Runtime: 27.83
+Epoch: 028, Loss: 0.000012, Gradient Norm: 0.001, R^2 Score: 0.96096, Validation-Loss: 0.000013, Validation R^2 Score: 0.95931, Runtime: 27.83
+Epoch: 029, Loss: 0.000012, Gradient Norm: 0.001, R^2 Score: 0.96113, Validation-Loss: 0.000012, Validation R^2 Score: 0.96239, Runtime: 27.80
+Epoch: 030, Loss: 0.000012, Gradient Norm: 0.001, R^2 Score: 0.96141, Validation-Loss: 0.000011, Validation R^2 Score: 0.96225, Runtime: 27.79
+Epoch: 031, Loss: 0.000011, Gradient Norm: 0.001, R^2 Score: 0.96157, Validation-Loss: 0.000010, Validation R^2 Score: 0.96156, Runtime: 27.83
+Epoch: 032, Loss: 0.000011, Gradient Norm: 0.001, R^2 Score: 0.96187, Validation-Loss: 0.000012, Validation R^2 Score: 0.96194, Runtime: 27.80
+Epoch: 033, Loss: 0.000011, Gradient Norm: 0.001, R^2 Score: 0.96206, Validation-Loss: 0.000011, Validation R^2 Score: 0.96101, Runtime: 27.79
+Epoch: 034, Loss: 0.000011, Gradient Norm: 0.001, R^2 Score: 0.96241, Validation-Loss: 0.000011, Validation R^2 Score: 0.96294, Runtime: 27.79
+Epoch: 035, Loss: 0.000010, Gradient Norm: 0.001, R^2 Score: 0.96259, Validation-Loss: 0.000010, Validation R^2 Score: 0.96301, Runtime: 27.81
+Epoch: 036, Loss: 0.000010, Gradient Norm: 0.001, R^2 Score: 0.96282, Validation-Loss: 0.000011, Validation R^2 Score: 0.96164, Runtime: 27.91
+Epoch: 037, Loss: 0.000010, Gradient Norm: 0.001, R^2 Score: 0.96288, Validation-Loss: 0.000011, Validation R^2 Score: 0.96136, Runtime: 27.81
+Epoch: 038, Loss: 0.000010, Gradient Norm: 0.001, R^2 Score: 0.96307, Validation-Loss: 0.000010, Validation R^2 Score: 0.96266, Runtime: 27.81
+Epoch: 039, Loss: 0.000010, Gradient Norm: 0.001, R^2 Score: 0.96338, Validation-Loss: 0.000010, Validation R^2 Score: 0.96303, Runtime: 27.77
+Epoch: 040, Loss: 0.000010, Gradient Norm: 0.001, R^2 Score: 0.96344, Validation-Loss: 0.000010, Validation R^2 Score: 0.96278, Runtime: 27.81
+Epoch: 041, Loss: 0.000010, Gradient Norm: 0.001, R^2 Score: 0.96359, Validation-Loss: 0.000009, Validation R^2 Score: 0.96476, Runtime: 27.81
+Epoch: 042, Loss: 0.000009, Gradient Norm: 0.001, R^2 Score: 0.96384, Validation-Loss: 0.000010, Validation R^2 Score: 0.96379, Runtime: 27.81
+Epoch: 043, Loss: 0.000009, Gradient Norm: 0.001, R^2 Score: 0.96397, Validation-Loss: 0.000009, Validation R^2 Score: 0.96493, Runtime: 27.80
+Epoch: 044, Loss: 0.000009, Gradient Norm: 0.001, R^2 Score: 0.96408, Validation-Loss: 0.000009, Validation R^2 Score: 0.96532, Runtime: 27.77
+Epoch: 045, Loss: 0.000009, Gradient Norm: 0.001, R^2 Score: 0.96430, Validation-Loss: 0.000009, Validation R^2 Score: 0.96476, Runtime: 27.79
+Epoch: 046, Loss: 0.000009, Gradient Norm: 0.001, R^2 Score: 0.96439, Validation-Loss: 0.000010, Validation R^2 Score: 0.96497, Runtime: 27.77
+Epoch: 047, Loss: 0.000009, Gradient Norm: 0.001, R^2 Score: 0.96460, Validation-Loss: 0.000009, Validation R^2 Score: 0.96429, Runtime: 27.70
+Epoch: 048, Loss: 0.000009, Gradient Norm: 0.001, R^2 Score: 0.96476, Validation-Loss: 0.000009, Validation R^2 Score: 0.96525, Runtime: 27.71
+Epoch: 049, Loss: 0.000009, Gradient Norm: 0.001, R^2 Score: 0.96484, Validation-Loss: 0.000008, Validation R^2 Score: 0.96409, Runtime: 27.72
+Epoch: 050, Loss: 0.000009, Gradient Norm: 0.001, R^2 Score: 0.96494, Validation-Loss: 0.000008, Validation R^2 Score: 0.96506, Runtime: 27.77
+Epoch: 051, Loss: 0.000008, Gradient Norm: 0.001, R^2 Score: 0.96507, Validation-Loss: 0.000008, Validation R^2 Score: 0.96543, Runtime: 27.75
+Epoch: 052, Loss: 0.000008, Gradient Norm: 0.001, R^2 Score: 0.96521, Validation-Loss: 0.000008, Validation R^2 Score: 0.96514, Runtime: 27.70
+Epoch: 053, Loss: 0.000008, Gradient Norm: 0.001, R^2 Score: 0.96527, Validation-Loss: 0.000008, Validation R^2 Score: 0.96540, Runtime: 27.74
+Epoch: 054, Loss: 0.000008, Gradient Norm: 0.001, R^2 Score: 0.96540, Validation-Loss: 0.000008, Validation R^2 Score: 0.96558, Runtime: 27.72
+Epoch: 055, Loss: 0.000008, Gradient Norm: 0.001, R^2 Score: 0.96543, Validation-Loss: 0.000009, Validation R^2 Score: 0.96407, Runtime: 27.70
+Epoch: 056, Loss: 0.000008, Gradient Norm: 0.001, R^2 Score: 0.96548, Validation-Loss: 0.000008, Validation R^2 Score: 0.96528, Runtime: 27.72
+Epoch: 057, Loss: 0.000008, Gradient Norm: 0.001, R^2 Score: 0.96556, Validation-Loss: 0.000008, Validation R^2 Score: 0.96600, Runtime: 27.75
+Epoch: 058, Loss: 0.000008, Gradient Norm: 0.001, R^2 Score: 0.96561, Validation-Loss: 0.000009, Validation R^2 Score: 0.96506, Runtime: 27.73
+Epoch: 059, Loss: 0.000008, Gradient Norm: 0.001, R^2 Score: 0.96565, Validation-Loss: 0.000008, Validation R^2 Score: 0.96552, Runtime: 27.69
+Epoch: 060, Loss: 0.000008, Gradient Norm: 0.000, R^2 Score: 0.96572, Validation-Loss: 0.000009, Validation R^2 Score: 0.96667, Runtime: 27.73
+Epoch: 061, Loss: 0.000008, Gradient Norm: 0.001, R^2 Score: 0.96570, Validation-Loss: 0.000008, Validation R^2 Score: 0.96547, Runtime: 27.70
+Epoch: 062, Loss: 0.000008, Gradient Norm: 0.001, R^2 Score: 0.96576, Validation-Loss: 0.000008, Validation R^2 Score: 0.96641, Runtime: 27.68
+Epoch: 063, Loss: 0.000008, Gradient Norm: 0.000, R^2 Score: 0.96582, Validation-Loss: 0.000008, Validation R^2 Score: 0.96622, Runtime: 27.72
+Epoch: 064, Loss: 0.000008, Gradient Norm: 0.001, R^2 Score: 0.96581, Validation-Loss: 0.000008, Validation R^2 Score: 0.96703, Runtime: 27.68
+Epoch: 065, Loss: 0.000007, Gradient Norm: 0.000, R^2 Score: 0.96586, Validation-Loss: 0.000008, Validation R^2 Score: 0.96441, Runtime: 27.66
+Epoch: 066, Loss: 0.000007, Gradient Norm: 0.001, R^2 Score: 0.96581, Validation-Loss: 0.000007, Validation R^2 Score: 0.96643, Runtime: 27.68
+Epoch: 067, Loss: 0.000007, Gradient Norm: 0.001, R^2 Score: 0.96584, Validation-Loss: 0.000007, Validation R^2 Score: 0.96611, Runtime: 27.68
+Epoch: 068, Loss: 0.000007, Gradient Norm: 0.001, R^2 Score: 0.96581, Validation-Loss: 0.000008, Validation R^2 Score: 0.96540, Runtime: 27.68
+Epoch: 069, Loss: 0.000007, Gradient Norm: 0.000, R^2 Score: 0.96585, Validation-Loss: 0.000007, Validation R^2 Score: 0.96550, Runtime: 27.66
+Epoch: 070, Loss: 0.000007, Gradient Norm: 0.000, R^2 Score: 0.96591, Validation-Loss: 0.000007, Validation R^2 Score: 0.96477, Runtime: 27.68
+Epoch: 071, Loss: 0.000007, Gradient Norm: 0.000, R^2 Score: 0.96589, Validation-Loss: 0.000008, Validation R^2 Score: 0.96588, Runtime: 27.66
+Epoch: 072, Loss: 0.000007, Gradient Norm: 0.001, R^2 Score: 0.96585, Validation-Loss: 0.000007, Validation R^2 Score: 0.96591, Runtime: 27.68
+Epoch: 073, Loss: 0.000007, Gradient Norm: 0.001, R^2 Score: 0.96590, Validation-Loss: 0.000007, Validation R^2 Score: 0.96609, Runtime: 27.65
+Epoch: 074, Loss: 0.000007, Gradient Norm: 0.001, R^2 Score: 0.96591, Validation-Loss: 0.000007, Validation R^2 Score: 0.96609, Runtime: 27.63
+Epoch: 075, Loss: 0.000007, Gradient Norm: 0.000, R^2 Score: 0.96595, Validation-Loss: 0.000007, Validation R^2 Score: 0.96579, Runtime: 27.66
+Epoch: 076, Loss: 0.000007, Gradient Norm: 0.000, R^2 Score: 0.96592, Validation-Loss: 0.000007, Validation R^2 Score: 0.96642, Runtime: 27.66
+Epoch: 077, Loss: 0.000007, Gradient Norm: 0.001, R^2 Score: 0.96591, Validation-Loss: 0.000007, Validation R^2 Score: 0.96700, Runtime: 27.65
+Epoch: 078, Loss: 0.000007, Gradient Norm: 0.001, R^2 Score: 0.96590, Validation-Loss: 0.000007, Validation R^2 Score: 0.96512, Runtime: 27.66
+Epoch: 079, Loss: 0.000007, Gradient Norm: 0.000, R^2 Score: 0.96590, Validation-Loss: 0.000008, Validation R^2 Score: 0.96560, Runtime: 27.65
+Epoch: 080, Loss: 0.000007, Gradient Norm: 0.001, R^2 Score: 0.96593, Validation-Loss: 0.000007, Validation R^2 Score: 0.96551, Runtime: 27.61
+Epoch: 081, Loss: 0.000007, Gradient Norm: 0.001, R^2 Score: 0.96590, Validation-Loss: 0.000007, Validation R^2 Score: 0.96610, Runtime: 27.65
+Epoch: 082, Loss: 0.000007, Gradient Norm: 0.001, R^2 Score: 0.96592, Validation-Loss: 0.000007, Validation R^2 Score: 0.96631, Runtime: 27.67
+Epoch: 083, Loss: 0.000007, Gradient Norm: 0.001, R^2 Score: 0.96591, Validation-Loss: 0.000007, Validation R^2 Score: 0.96623, Runtime: 27.65
+Epoch: 084, Loss: 0.000007, Gradient Norm: 0.001, R^2 Score: 0.96590, Validation-Loss: 0.000007, Validation R^2 Score: 0.96602, Runtime: 27.64
+Epoch: 085, Loss: 0.000007, Gradient Norm: 0.001, R^2 Score: 0.96592, Validation-Loss: 0.000007, Validation R^2 Score: 0.96515, Runtime: 27.67
+Epoch: 086, Loss: 0.000007, Gradient Norm: 0.001, R^2 Score: 0.96587, Validation-Loss: 0.000007, Validation R^2 Score: 0.96565, Runtime: 27.63
+Epoch: 087, Loss: 0.000007, Gradient Norm: 0.001, R^2 Score: 0.96595, Validation-Loss: 0.000007, Validation R^2 Score: 0.96514, Runtime: 27.63
+Epoch: 088, Loss: 0.000007, Gradient Norm: 0.001, R^2 Score: 0.96598, Validation-Loss: 0.000006, Validation R^2 Score: 0.96594, Runtime: 27.62
+Epoch: 089, Loss: 0.000007, Gradient Norm: 0.001, R^2 Score: 0.96593, Validation-Loss: 0.000006, Validation R^2 Score: 0.96617, Runtime: 27.66
+Epoch: 090, Loss: 0.000007, Gradient Norm: 0.001, R^2 Score: 0.96596, Validation-Loss: 0.000006, Validation R^2 Score: 0.96621, Runtime: 27.62
+Epoch: 091, Loss: 0.000007, Gradient Norm: 0.001, R^2 Score: 0.96591, Validation-Loss: 0.000007, Validation R^2 Score: 0.96553, Runtime: 27.65
+Epoch: 092, Loss: 0.000007, Gradient Norm: 0.001, R^2 Score: 0.96598, Validation-Loss: 0.000006, Validation R^2 Score: 0.96595, Runtime: 27.64
+Epoch: 093, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96599, Validation-Loss: 0.000006, Validation R^2 Score: 0.96542, Runtime: 27.65
+Epoch: 094, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96601, Validation-Loss: 0.000007, Validation R^2 Score: 0.96635, Runtime: 27.64
+Epoch: 095, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96605, Validation-Loss: 0.000007, Validation R^2 Score: 0.96496, Runtime: 27.63
+Epoch: 096, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96610, Validation-Loss: 0.000006, Validation R^2 Score: 0.96633, Runtime: 27.66
+Epoch: 097, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96603, Validation-Loss: 0.000008, Validation R^2 Score: 0.96427, Runtime: 27.63
+Epoch: 098, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96605, Validation-Loss: 0.000006, Validation R^2 Score: 0.96529, Runtime: 27.63
+Epoch: 099, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96604, Validation-Loss: 0.000006, Validation R^2 Score: 0.96678, Runtime: 27.61
+Epoch: 100, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96611, Validation-Loss: 0.000006, Validation R^2 Score: 0.96587, Runtime: 27.64
+Epoch: 101, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96606, Validation-Loss: 0.000007, Validation R^2 Score: 0.96647, Runtime: 27.60
+Epoch: 102, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96615, Validation-Loss: 0.000006, Validation R^2 Score: 0.96650, Runtime: 27.63
+Epoch: 103, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96614, Validation-Loss: 0.000006, Validation R^2 Score: 0.96597, Runtime: 27.63
+Epoch: 104, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96612, Validation-Loss: 0.000006, Validation R^2 Score: 0.96676, Runtime: 27.59
+Epoch: 105, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96617, Validation-Loss: 0.000007, Validation R^2 Score: 0.96629, Runtime: 27.60
+Epoch: 106, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96624, Validation-Loss: 0.000006, Validation R^2 Score: 0.96565, Runtime: 27.58
+Epoch: 107, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96615, Validation-Loss: 0.000006, Validation R^2 Score: 0.96703, Runtime: 27.59
+Epoch: 108, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96628, Validation-Loss: 0.000007, Validation R^2 Score: 0.96772, Runtime: 27.57
+Epoch: 109, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96624, Validation-Loss: 0.000006, Validation R^2 Score: 0.96633, Runtime: 27.61
+Epoch: 110, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96630, Validation-Loss: 0.000007, Validation R^2 Score: 0.96666, Runtime: 27.90
+Epoch: 111, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96625, Validation-Loss: 0.000006, Validation R^2 Score: 0.96665, Runtime: 27.69
+Epoch: 112, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96632, Validation-Loss: 0.000006, Validation R^2 Score: 0.96666, Runtime: 27.66
+Epoch: 113, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96633, Validation-Loss: 0.000006, Validation R^2 Score: 0.96714, Runtime: 27.68
+Epoch: 114, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96634, Validation-Loss: 0.000007, Validation R^2 Score: 0.96591, Runtime: 27.60
+Epoch: 115, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96631, Validation-Loss: 0.000006, Validation R^2 Score: 0.96693, Runtime: 27.61
+Epoch: 116, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96637, Validation-Loss: 0.000006, Validation R^2 Score: 0.96514, Runtime: 27.60
+Epoch: 117, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96641, Validation-Loss: 0.000006, Validation R^2 Score: 0.96722, Runtime: 27.61
+Epoch: 118, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96643, Validation-Loss: 0.000006, Validation R^2 Score: 0.96638, Runtime: 27.59
+Epoch: 119, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96637, Validation-Loss: 0.000006, Validation R^2 Score: 0.96594, Runtime: 27.61
+Epoch: 120, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96643, Validation-Loss: 0.000007, Validation R^2 Score: 0.96495, Runtime: 27.60
+Epoch: 121, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96639, Validation-Loss: 0.000006, Validation R^2 Score: 0.96641, Runtime: 27.66
+Epoch: 122, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96633, Validation-Loss: 0.000006, Validation R^2 Score: 0.96664, Runtime: 27.63
+Epoch: 123, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96645, Validation-Loss: 0.000006, Validation R^2 Score: 0.96595, Runtime: 28.02
+Epoch: 124, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96648, Validation-Loss: 0.000006, Validation R^2 Score: 0.96616, Runtime: 27.59
+Epoch: 125, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96641, Validation-Loss: 0.000006, Validation R^2 Score: 0.96658, Runtime: 27.60
+Epoch: 126, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96645, Validation-Loss: 0.000006, Validation R^2 Score: 0.96745, Runtime: 28.47
+Epoch: 127, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96646, Validation-Loss: 0.000009, Validation R^2 Score: 0.96692, Runtime: 28.05
+Epoch: 128, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96631, Validation-Loss: 0.000008, Validation R^2 Score: 0.96743, Runtime: 27.59
+Epoch: 129, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96646, Validation-Loss: 0.000006, Validation R^2 Score: 0.96609, Runtime: 27.77
+Epoch: 130, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96647, Validation-Loss: 0.000007, Validation R^2 Score: 0.96524, Runtime: 32.76
+Epoch: 131, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96637, Validation-Loss: 0.000007, Validation R^2 Score: 0.96712, Runtime: 30.41
+Epoch: 132, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96648, Validation-Loss: 0.000007, Validation R^2 Score: 0.96499, Runtime: 28.07
+Epoch: 133, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96646, Validation-Loss: 0.000005, Validation R^2 Score: 0.96670, Runtime: 27.60
+Epoch: 134, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96647, Validation-Loss: 0.000006, Validation R^2 Score: 0.96721, Runtime: 27.58
+Epoch: 135, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96649, Validation-Loss: 0.000005, Validation R^2 Score: 0.96710, Runtime: 27.61
+Epoch: 136, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96648, Validation-Loss: 0.000005, Validation R^2 Score: 0.96659, Runtime: 27.59
+Epoch: 137, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96649, Validation-Loss: 0.000007, Validation R^2 Score: 0.96619, Runtime: 27.61
+Epoch: 138, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96655, Validation-Loss: 0.000005, Validation R^2 Score: 0.96661, Runtime: 27.57
+Epoch: 139, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96647, Validation-Loss: 0.000007, Validation R^2 Score: 0.96737, Runtime: 27.54
+Epoch: 140, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96652, Validation-Loss: 0.000006, Validation R^2 Score: 0.96700, Runtime: 27.56
+Epoch: 141, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96659, Validation-Loss: 0.000006, Validation R^2 Score: 0.96622, Runtime: 27.60
+Epoch: 142, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96656, Validation-Loss: 0.000006, Validation R^2 Score: 0.96684, Runtime: 27.56
+Epoch: 143, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96649, Validation-Loss: 0.000007, Validation R^2 Score: 0.96671, Runtime: 28.02
+Epoch: 144, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96661, Validation-Loss: 0.000006, Validation R^2 Score: 0.96597, Runtime: 27.57
+Epoch: 145, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96657, Validation-Loss: 0.000006, Validation R^2 Score: 0.96555, Runtime: 27.60
+Epoch: 146, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96652, Validation-Loss: 0.000006, Validation R^2 Score: 0.96651, Runtime: 27.58
+Epoch: 147, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96655, Validation-Loss: 0.000006, Validation R^2 Score: 0.96619, Runtime: 30.37
+Epoch: 148, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96654, Validation-Loss: 0.000006, Validation R^2 Score: 0.96597, Runtime: 31.66
+Epoch: 149, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96651, Validation-Loss: 0.000006, Validation R^2 Score: 0.96676, Runtime: 31.77
+Epoch: 150, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96661, Validation-Loss: 0.000006, Validation R^2 Score: 0.96541, Runtime: 27.82
+Epoch: 151, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96658, Validation-Loss: 0.000006, Validation R^2 Score: 0.96679, Runtime: 27.58
+Epoch: 152, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96652, Validation-Loss: 0.000005, Validation R^2 Score: 0.96618, Runtime: 27.59
+Epoch: 153, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96666, Validation-Loss: 0.000005, Validation R^2 Score: 0.96629, Runtime: 27.56
+Epoch: 154, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96661, Validation-Loss: 0.000006, Validation R^2 Score: 0.96683, Runtime: 27.59
+Epoch: 155, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96659, Validation-Loss: 0.000006, Validation R^2 Score: 0.96740, Runtime: 27.60
+Epoch: 156, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96664, Validation-Loss: 0.000006, Validation R^2 Score: 0.96762, Runtime: 27.60
+Epoch: 157, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96664, Validation-Loss: 0.000007, Validation R^2 Score: 0.96706, Runtime: 27.58
+Epoch: 158, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96660, Validation-Loss: 0.000006, Validation R^2 Score: 0.96584, Runtime: 27.59
+Epoch: 159, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96673, Validation-Loss: 0.000006, Validation R^2 Score: 0.96596, Runtime: 27.57
+Epoch: 160, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96674, Validation-Loss: 0.000005, Validation R^2 Score: 0.96676, Runtime: 27.59
+Epoch: 161, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96672, Validation-Loss: 0.000005, Validation R^2 Score: 0.96723, Runtime: 27.55
+Epoch: 162, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96672, Validation-Loss: 0.000006, Validation R^2 Score: 0.96693, Runtime: 27.58
+Epoch: 163, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96663, Validation-Loss: 0.000005, Validation R^2 Score: 0.96682, Runtime: 28.02
+Epoch: 164, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96677, Validation-Loss: 0.000006, Validation R^2 Score: 0.96737, Runtime: 27.56
+Epoch: 165, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96671, Validation-Loss: 0.000005, Validation R^2 Score: 0.96632, Runtime: 27.58
+Epoch: 166, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96679, Validation-Loss: 0.000006, Validation R^2 Score: 0.96594, Runtime: 27.56
+Epoch: 167, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96674, Validation-Loss: 0.000006, Validation R^2 Score: 0.96690, Runtime: 27.55
+Epoch: 168, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96683, Validation-Loss: 0.000006, Validation R^2 Score: 0.96662, Runtime: 27.58
+Epoch: 169, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96679, Validation-Loss: 0.000005, Validation R^2 Score: 0.96655, Runtime: 27.57
+Epoch: 170, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96673, Validation-Loss: 0.000006, Validation R^2 Score: 0.96715, Runtime: 31.26
+Epoch: 171, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96671, Validation-Loss: 0.000005, Validation R^2 Score: 0.96700, Runtime: 31.67
+Epoch: 172, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96679, Validation-Loss: 0.000005, Validation R^2 Score: 0.96689, Runtime: 31.05
+Epoch: 173, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96684, Validation-Loss: 0.000006, Validation R^2 Score: 0.96611, Runtime: 27.57
+Epoch: 174, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96672, Validation-Loss: 0.000005, Validation R^2 Score: 0.96669, Runtime: 27.59
+Epoch: 175, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96690, Validation-Loss: 0.000005, Validation R^2 Score: 0.96611, Runtime: 29.71
+Epoch: 176, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96680, Validation-Loss: 0.000006, Validation R^2 Score: 0.96691, Runtime: 27.61
+Epoch: 177, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96684, Validation-Loss: 0.000006, Validation R^2 Score: 0.96698, Runtime: 27.57
+Epoch: 178, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96683, Validation-Loss: 0.000007, Validation R^2 Score: 0.96751, Runtime: 27.59
+Epoch: 179, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96677, Validation-Loss: 0.000006, Validation R^2 Score: 0.96582, Runtime: 27.65
+Epoch: 180, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96688, Validation-Loss: 0.000005, Validation R^2 Score: 0.96752, Runtime: 27.58
+Epoch: 181, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96678, Validation-Loss: 0.000006, Validation R^2 Score: 0.96691, Runtime: 27.60
+Epoch: 182, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96685, Validation-Loss: 0.000006, Validation R^2 Score: 0.96717, Runtime: 27.58
+Epoch: 183, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96682, Validation-Loss: 0.000006, Validation R^2 Score: 0.96681, Runtime: 27.54
+Epoch: 184, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96684, Validation-Loss: 0.000005, Validation R^2 Score: 0.96696, Runtime: 27.58
+Epoch: 185, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96682, Validation-Loss: 0.000006, Validation R^2 Score: 0.96641, Runtime: 27.56
+Epoch: 186, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96685, Validation-Loss: 0.000006, Validation R^2 Score: 0.96686, Runtime: 27.58
+Epoch: 187, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96682, Validation-Loss: 0.000005, Validation R^2 Score: 0.96675, Runtime: 27.58
+Epoch: 188, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96684, Validation-Loss: 0.000005, Validation R^2 Score: 0.96704, Runtime: 27.58
+Epoch: 189, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96685, Validation-Loss: 0.000005, Validation R^2 Score: 0.96666, Runtime: 27.59
+Epoch: 190, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96689, Validation-Loss: 0.000005, Validation R^2 Score: 0.96678, Runtime: 27.61
+Epoch: 191, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96676, Validation-Loss: 0.000006, Validation R^2 Score: 0.96718, Runtime: 27.56
+Epoch: 192, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96690, Validation-Loss: 0.000006, Validation R^2 Score: 0.96635, Runtime: 27.57
+Epoch: 193, Loss: 0.000006, Gradient Norm: 0.001, R^2 Score: 0.96680, Validation-Loss: 0.000005, Validation R^2 Score: 0.96774, Runtime: 27.60
+Epoch: 194, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96690, Validation-Loss: 0.000006, Validation R^2 Score: 0.96651, Runtime: 27.55
+Epoch: 195, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96688, Validation-Loss: 0.000007, Validation R^2 Score: 0.96517, Runtime: 27.58
+Epoch: 196, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96688, Validation-Loss: 0.000005, Validation R^2 Score: 0.96655, Runtime: 27.54
+Epoch: 197, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96689, Validation-Loss: 0.000005, Validation R^2 Score: 0.96638, Runtime: 27.56
+Epoch: 198, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96685, Validation-Loss: 0.000006, Validation R^2 Score: 0.96744, Runtime: 27.57
+Epoch: 199, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96685, Validation-Loss: 0.000005, Validation R^2 Score: 0.96642, Runtime: 27.55
+Epoch: 200, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96690, Validation-Loss: 0.000006, Validation R^2 Score: 0.96647, Runtime: 27.57
+Epoch: 201, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96686, Validation-Loss: 0.000006, Validation R^2 Score: 0.96708, Runtime: 27.59
+Epoch: 202, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96680, Validation-Loss: 0.000005, Validation R^2 Score: 0.96758, Runtime: 27.58
+Epoch: 203, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96682, Validation-Loss: 0.000006, Validation R^2 Score: 0.96607, Runtime: 27.60
+Epoch: 204, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96687, Validation-Loss: 0.000006, Validation R^2 Score: 0.96638, Runtime: 27.56
+Epoch: 205, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96685, Validation-Loss: 0.000006, Validation R^2 Score: 0.96774, Runtime: 27.57
+Epoch: 206, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96682, Validation-Loss: 0.000005, Validation R^2 Score: 0.96692, Runtime: 27.63
+Epoch: 207, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96687, Validation-Loss: 0.000006, Validation R^2 Score: 0.96650, Runtime: 29.36
+Epoch: 208, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96694, Validation-Loss: 0.000006, Validation R^2 Score: 0.96718, Runtime: 27.61
+Epoch: 209, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96685, Validation-Loss: 0.000005, Validation R^2 Score: 0.96742, Runtime: 31.48
+Epoch: 210, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96689, Validation-Loss: 0.000006, Validation R^2 Score: 0.96698, Runtime: 27.62
+Epoch: 211, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96685, Validation-Loss: 0.000006, Validation R^2 Score: 0.96695, Runtime: 27.64
+Epoch: 212, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96683, Validation-Loss: 0.000005, Validation R^2 Score: 0.96671, Runtime: 27.58
+Epoch: 213, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96684, Validation-Loss: 0.000005, Validation R^2 Score: 0.96736, Runtime: 27.55
+Epoch: 214, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96689, Validation-Loss: 0.000006, Validation R^2 Score: 0.96693, Runtime: 27.61
+Epoch: 215, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96684, Validation-Loss: 0.000005, Validation R^2 Score: 0.96739, Runtime: 29.42
+Epoch: 216, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96693, Validation-Loss: 0.000005, Validation R^2 Score: 0.96736, Runtime: 27.60
+Epoch: 217, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96686, Validation-Loss: 0.000008, Validation R^2 Score: 0.96532, Runtime: 27.62
+Epoch: 218, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96689, Validation-Loss: 0.000005, Validation R^2 Score: 0.96663, Runtime: 27.60
+Epoch: 219, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96696, Validation-Loss: 0.000006, Validation R^2 Score: 0.96572, Runtime: 27.57
+Epoch: 220, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96695, Validation-Loss: 0.000005, Validation R^2 Score: 0.96684, Runtime: 27.59
+Epoch: 221, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96694, Validation-Loss: 0.000006, Validation R^2 Score: 0.96747, Runtime: 27.60
+Epoch: 222, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96696, Validation-Loss: 0.000006, Validation R^2 Score: 0.96677, Runtime: 27.58
+Epoch: 223, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96699, Validation-Loss: 0.000006, Validation R^2 Score: 0.96730, Runtime: 27.54
+Epoch: 224, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96694, Validation-Loss: 0.000005, Validation R^2 Score: 0.96620, Runtime: 27.55
+Epoch: 225, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96696, Validation-Loss: 0.000005, Validation R^2 Score: 0.96721, Runtime: 27.59
+Epoch: 226, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96701, Validation-Loss: 0.000005, Validation R^2 Score: 0.96670, Runtime: 27.60
+Epoch: 227, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96703, Validation-Loss: 0.000007, Validation R^2 Score: 0.96769, Runtime: 27.60
+Epoch: 228, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96697, Validation-Loss: 0.000005, Validation R^2 Score: 0.96709, Runtime: 27.56
+Epoch: 229, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96709, Validation-Loss: 0.000005, Validation R^2 Score: 0.96720, Runtime: 27.57
+Epoch: 230, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96702, Validation-Loss: 0.000006, Validation R^2 Score: 0.96592, Runtime: 27.60
+Epoch: 231, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96706, Validation-Loss: 0.000005, Validation R^2 Score: 0.96712, Runtime: 27.59
+Epoch: 232, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96702, Validation-Loss: 0.000005, Validation R^2 Score: 0.96684, Runtime: 27.58
+Epoch: 233, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96709, Validation-Loss: 0.000005, Validation R^2 Score: 0.96766, Runtime: 27.57
+Epoch: 234, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96710, Validation-Loss: 0.000005, Validation R^2 Score: 0.96730, Runtime: 27.58
+Epoch: 235, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96713, Validation-Loss: 0.000005, Validation R^2 Score: 0.96713, Runtime: 27.60
+Epoch: 236, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96714, Validation-Loss: 0.000006, Validation R^2 Score: 0.96618, Runtime: 27.60
+Epoch: 237, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96711, Validation-Loss: 0.000007, Validation R^2 Score: 0.96722, Runtime: 27.54
+Epoch: 238, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96705, Validation-Loss: 0.000005, Validation R^2 Score: 0.96711, Runtime: 27.60
+Epoch: 239, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96705, Validation-Loss: 0.000006, Validation R^2 Score: 0.96607, Runtime: 27.57
+Epoch: 240, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96724, Validation-Loss: 0.000007, Validation R^2 Score: 0.96622, Runtime: 27.57
+Epoch: 241, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96706, Validation-Loss: 0.000005, Validation R^2 Score: 0.96772, Runtime: 27.61
+Epoch: 242, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96718, Validation-Loss: 0.000006, Validation R^2 Score: 0.96721, Runtime: 27.59
+Epoch: 243, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96716, Validation-Loss: 0.000005, Validation R^2 Score: 0.96745, Runtime: 27.57
+Epoch: 244, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96728, Validation-Loss: 0.000005, Validation R^2 Score: 0.96741, Runtime: 27.58
+Epoch: 245, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96716, Validation-Loss: 0.000006, Validation R^2 Score: 0.96676, Runtime: 27.60
+Epoch: 246, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96726, Validation-Loss: 0.000005, Validation R^2 Score: 0.96682, Runtime: 27.59
+Epoch: 247, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96723, Validation-Loss: 0.000006, Validation R^2 Score: 0.96802, Runtime: 27.62
+Epoch: 248, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96715, Validation-Loss: 0.000005, Validation R^2 Score: 0.96744, Runtime: 27.58
+Epoch: 249, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96733, Validation-Loss: 0.000005, Validation R^2 Score: 0.96759, Runtime: 27.58
+Epoch: 250, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96725, Validation-Loss: 0.000005, Validation R^2 Score: 0.96621, Runtime: 27.57
+Epoch: 251, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96724, Validation-Loss: 0.000005, Validation R^2 Score: 0.96762, Runtime: 27.57
+Epoch: 252, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96722, Validation-Loss: 0.000005, Validation R^2 Score: 0.96746, Runtime: 27.60
+Epoch: 253, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96721, Validation-Loss: 0.000006, Validation R^2 Score: 0.96565, Runtime: 27.55
+Epoch: 254, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96733, Validation-Loss: 0.000006, Validation R^2 Score: 0.96769, Runtime: 27.57
+Epoch: 255, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96727, Validation-Loss: 0.000006, Validation R^2 Score: 0.96859, Runtime: 27.61
+Epoch: 256, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96725, Validation-Loss: 0.000006, Validation R^2 Score: 0.96657, Runtime: 27.57
+Epoch: 257, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96727, Validation-Loss: 0.000006, Validation R^2 Score: 0.96702, Runtime: 27.60
+Epoch: 258, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96720, Validation-Loss: 0.000005, Validation R^2 Score: 0.96679, Runtime: 27.59
+Epoch: 259, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96733, Validation-Loss: 0.000006, Validation R^2 Score: 0.96652, Runtime: 27.55
+Epoch: 260, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96728, Validation-Loss: 0.000005, Validation R^2 Score: 0.96765, Runtime: 27.55
+Epoch: 261, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96727, Validation-Loss: 0.000005, Validation R^2 Score: 0.96709, Runtime: 27.60
+Epoch: 262, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96733, Validation-Loss: 0.000006, Validation R^2 Score: 0.96715, Runtime: 27.61
+Epoch: 263, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96728, Validation-Loss: 0.000008, Validation R^2 Score: 0.96480, Runtime: 27.59
+Epoch: 264, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96727, Validation-Loss: 0.000005, Validation R^2 Score: 0.96761, Runtime: 27.60
+Epoch: 265, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96731, Validation-Loss: 0.000006, Validation R^2 Score: 0.96766, Runtime: 27.61
+Epoch: 266, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96734, Validation-Loss: 0.000006, Validation R^2 Score: 0.96718, Runtime: 27.55
+Epoch: 267, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96730, Validation-Loss: 0.000006, Validation R^2 Score: 0.96673, Runtime: 27.59
+Epoch: 268, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96727, Validation-Loss: 0.000005, Validation R^2 Score: 0.96795, Runtime: 27.59
+Epoch: 269, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96730, Validation-Loss: 0.000005, Validation R^2 Score: 0.96746, Runtime: 27.60
+Epoch: 270, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96738, Validation-Loss: 0.000006, Validation R^2 Score: 0.96670, Runtime: 27.59
+Epoch: 271, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96727, Validation-Loss: 0.000006, Validation R^2 Score: 0.96772, Runtime: 27.59
+Epoch: 272, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96735, Validation-Loss: 0.000005, Validation R^2 Score: 0.96706, Runtime: 27.58
+Epoch: 273, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96731, Validation-Loss: 0.000005, Validation R^2 Score: 0.96769, Runtime: 27.60
+Epoch: 274, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96731, Validation-Loss: 0.000006, Validation R^2 Score: 0.96592, Runtime: 27.60
+Epoch: 275, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96720, Validation-Loss: 0.000005, Validation R^2 Score: 0.96675, Runtime: 27.57
+Epoch: 276, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96739, Validation-Loss: 0.000005, Validation R^2 Score: 0.96829, Runtime: 27.58
+Epoch: 277, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96730, Validation-Loss: 0.000005, Validation R^2 Score: 0.96711, Runtime: 27.58
+Epoch: 278, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96730, Validation-Loss: 0.000006, Validation R^2 Score: 0.96700, Runtime: 27.58
+Epoch: 279, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96739, Validation-Loss: 0.000006, Validation R^2 Score: 0.96821, Runtime: 27.63
+Epoch: 280, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96724, Validation-Loss: 0.000005, Validation R^2 Score: 0.96706, Runtime: 27.57
+Epoch: 281, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96730, Validation-Loss: 0.000005, Validation R^2 Score: 0.96678, Runtime: 27.58
+Epoch: 282, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96728, Validation-Loss: 0.000005, Validation R^2 Score: 0.96766, Runtime: 27.58
+Epoch: 283, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96737, Validation-Loss: 0.000007, Validation R^2 Score: 0.96575, Runtime: 27.58
+Epoch: 284, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96728, Validation-Loss: 0.000005, Validation R^2 Score: 0.96713, Runtime: 27.58
+Epoch: 285, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96725, Validation-Loss: 0.000005, Validation R^2 Score: 0.96756, Runtime: 27.59
+Epoch: 286, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96736, Validation-Loss: 0.000005, Validation R^2 Score: 0.96663, Runtime: 27.56
+Epoch: 287, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96721, Validation-Loss: 0.000005, Validation R^2 Score: 0.96775, Runtime: 27.61
+Epoch: 288, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96736, Validation-Loss: 0.000005, Validation R^2 Score: 0.96765, Runtime: 27.59
+Epoch: 289, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96722, Validation-Loss: 0.000005, Validation R^2 Score: 0.96722, Runtime: 27.58
+Epoch: 290, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96718, Validation-Loss: 0.000005, Validation R^2 Score: 0.96705, Runtime: 27.57
+Epoch: 291, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96725, Validation-Loss: 0.000005, Validation R^2 Score: 0.96675, Runtime: 27.58
+Epoch: 292, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96731, Validation-Loss: 0.000005, Validation R^2 Score: 0.96762, Runtime: 27.60
+Epoch: 293, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96718, Validation-Loss: 0.000006, Validation R^2 Score: 0.96730, Runtime: 27.55
+Epoch: 294, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96728, Validation-Loss: 0.000006, Validation R^2 Score: 0.96637, Runtime: 27.58
+Epoch: 295, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96723, Validation-Loss: 0.000005, Validation R^2 Score: 0.96710, Runtime: 27.61
+Epoch: 296, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96720, Validation-Loss: 0.000005, Validation R^2 Score: 0.96663, Runtime: 27.58
+Epoch: 297, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96725, Validation-Loss: 0.000005, Validation R^2 Score: 0.96757, Runtime: 27.60
+Epoch: 298, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96723, Validation-Loss: 0.000006, Validation R^2 Score: 0.96722, Runtime: 27.60
+Epoch: 299, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96723, Validation-Loss: 0.000006, Validation R^2 Score: 0.96763, Runtime: 27.59
+Epoch: 300, Loss: 0.000005, Gradient Norm: 0.001, R^2 Score: 0.96728, Validation-Loss: 0.000005, Validation R^2 Score: 0.96782, Runtime: 27.56
+Runtime: 8338.210177183151
+
+-----------------
+LOG 
+-----------------
+
+Seeds: [1]
+
+
+
+Seed: [1]
+
+Errors Last Epoch
+
+################
+Sample part_001
+Train Error: 0.000058+0.000105 | 0.000027
+Test  Error: 0.000057+0.000104 | 0.000026
+
+
+################
+Sample part_004
+Train Error: 0.000019+0.000041 | 0.000008
+Test  Error: 0.000018+0.000037 | 0.000008
+
+
+################
+Sample part_000
+Train Error: 0.000054+0.000074 | 0.000029
+Test  Error: 0.000053+0.000074 | 0.000028
+
+
+################
+Sample part_002
+Train Error: 0.000041+0.000063 | 0.000025
+Test  Error: 0.000041+0.000062 | 0.000025
+
+
+################
+Sample part_005
+Train Error: 0.000013+0.000022 | 0.000007
+Test  Error: 0.000013+0.000021 | 0.000007
+
+
+################
+Sample part_003
+Train Error: 0.000052+0.000068 | 0.000030
+Test  Error: 0.000052+0.000068 | 0.000030
+
+
+
+Total Mean Squared Error:
+
+Train Error: 0.000037+0.000067 | 0.000017
+Test  Error: 0.000037+0.000067 | 0.000017
+
+
+
+Point2Surface Distance:
+
+
+################
+Sample part_001
+Train Error: 0.000021+0.000044 | 0.000007
+Test  Error: 0.000021+0.000044 | 0.000007
+
+
+################
+Sample part_004
+Train Error: 0.000006+0.000017 | 0.000001
+Test  Error: 0.000006+0.000015 | 0.000001
+
+
+################
+Sample part_000
+Train Error: 0.000021+0.000040 | 0.000007
+Test  Error: 0.000020+0.000039 | 0.000007
+
+
+################
+Sample part_002
+Train Error: 0.000016+0.000026 | 0.000006
+Test  Error: 0.000016+0.000026 | 0.000006
+
+
+################
+Sample part_005
+Train Error: 0.000004+0.000009 | 0.000001
+Test  Error: 0.000004+0.000009 | 0.000001
+
+
+################
+Sample part_003
+Train Error: 0.000022+0.000037 | 0.000008
+Test  Error: 0.000022+0.000038 | 0.000008
+
+
+
+Total Mean Squared Error:
+
+Train Error: 0.000014+0.000031 | 0.000003
+Test  Error: 0.000014+0.000031 | 0.000003
+
+
+nEuclidean Errors Last Epoch
+
+################
+Sample part_001
+Train Error: 0.435698+0.300498 | 0.360203
+Test  Error: 0.433416+0.300458 | 0.356397
+
+
+################
+Sample part_004
+Train Error: 0.646149+0.480667 | 0.528210
+Test  Error: 0.635992+0.456186 | 0.526947
+
+
+################
+Sample part_000
+Train Error: 0.477788+0.288870 | 0.408017
+Test  Error: 0.474456+0.288946 | 0.403088
+
+
+################
+Sample part_002
+Train Error: 0.427993+0.244466 | 0.382566
+Test  Error: 0.429209+0.244418 | 0.384343
+
+
+################
+Sample part_005
+Train Error: 0.573206+0.357621 | 0.496362
+Test  Error: 0.575171+0.353505 | 0.499739
+
+
+################
+Sample part_003
+Train Error: 0.437359+0.254184 | 0.384229
+Test  Error: 0.436509+0.255015 | 0.382698
+
+
+
+Total Mean Squared Error:
+
+Train Error: 0.511010+0.352266 | 0.428961
+Test  Error: 0.508553+0.344328 | 0.428296
+
+
+
+Point2Surface Distance (Euclidean Errors):
+
+
+################
+Sample part_001
+Train Error: 0.236746+0.212826 | 0.179434
+Test  Error: 0.235590+0.212588 | 0.177842
+
+
+################
+Sample part_004
+Train Error: 0.312172+0.321871 | 0.226448
+Test  Error: 0.307493+0.308959 | 0.225398
+
+
+################
+Sample part_000
+Train Error: 0.262688+0.232060 | 0.200758
+Test  Error: 0.257634+0.229681 | 0.195080
+
+
+################
+Sample part_002
+Train Error: 0.236210+0.191233 | 0.191068
+Test  Error: 0.236033+0.191604 | 0.189936
+
+
+################
+Sample part_005
+Train Error: 0.253845+0.242197 | 0.186475
+Test  Error: 0.256350+0.241212 | 0.188643
+
+
+################
+Sample part_003
+Train Error: 0.250516+0.209241 | 0.197093
+Test  Error: 0.249536+0.210030 | 0.196240
+
+
+
+Total Mean Squared Error:
+
+Train Error: 0.261250+0.245424 | 0.196718
+Test  Error: 0.259699+0.241471 | 0.195571
+
